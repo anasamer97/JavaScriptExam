@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./css/all.min.css" />
+   <link rel="stylesheet" href="./css/bootstrap.min.css" />
+   <link rel="stylesheet" href="./css/style.css" />
+   <title>JS Exam #2</title>
+</head>
+
+<body class="bg-black">
+
+   <div class="loading d-none" id="loadingScreen">
+      <span class="loader" id="loaderAnimation"></span>
+
+   </div>
+
+   <aside class="sidebar side-navigation-menu d-flex min-vh-100 text-white top-0 position-fixed">
+      <section class="sidebar-content content d-flex flex-column justify-content-between">
+         <section class="navigation-items">
+            <ul class="p-4 list-unstyled">
+               <li id="searchButton">Search</li>
+               <li id="categories" onclick="getCategories()">Categories</li>
+               <li id="area" onclick="getArea()">Area</li>
+               <li onclick="getIngredients()">Ingredients</li>
+               <li>Contact Us</li>
+            </ul>
+         </section>
+         <section class="navigation-footer p-4 ">
+            <section class="social-media-anchors d-flex justify-content-center gap-4 fs-5">
+               <i class="fa-brands fa-facebook"></i>
+               <i class="fa-brands fa-twitter"></i>
+               <i class="fa-solid fa-globe"></i>
+            </section>
+
+            <section class="copyrights-content">
+               <p class="mt-4">Copyright <i class="fa fa-copyright"></i> 2019 All Rights <br> Reserved. </p>
+            </section>
+         </section>
+      </section>
+
+
+
+
+      <section
+         class="navigation-header text-black  d-flex flex-column justify-content-between bg-white position-relative">
+         <section class="navigation-icons h-50 d-flex flex-column p-3 align-items-center justify-content-between gap-4">
+            <img src="images/logo-yummy.png" width="50px" alt="Logo">
+            <div>
+               <i class="fa-solid fa-x close-open-toggle-icon fs-3"></i>
+            </div>
+         </section>
+
+         <section
+            class="navigation-footer d-flex flex-column justify-content-center align-items-center gap-4 fs-4 mb-3">
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+         </section>
+      </section>
+   </aside>
+
+
+   <!-- Container here -->
+   <!-- <section class="search-fields bg-black w-50 m-auto " id="searchContainer">
+      <section class="search d-flex gap-3">
+         <input type="text" placeholder="Search by name.." class="form-control bg-transparent text-white"
+            id="searchByName">
+         <input type="text" placeholder="Search by first letter.." class="form-control bg-transparent text-white"
+            id="searchByName">
+      </section>
+   </section> -->
+
+
+   <!-- Container here -->
+   <div class="container">
+      <div class="row bg-black p-3 m-3 g-4" id="homeSection">
+      </div>
+
+   </div>
+
+
+
+
+
+
+
+
+
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="./js/bootstrap.bundle.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>
